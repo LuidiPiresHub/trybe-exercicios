@@ -1,0 +1,39 @@
+body{
+    background-color:  grey;
+}
+header{
+    text-align: center;
+    background-color: green;
+    border: 5px solid black;
+    color: white;
+}
+nav {
+    text-align: center;
+    background-color: blue;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 10px;
+    height: top px ;
+}
+.link{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 30px;
+    text-decoration: none;
+}
+.yellow-color{
+    text-align: center;
+    color: yellow; 
+}
+article p{
+    text-align: center;
+    display: inline block;
+    color:  white;
+    font: 15px;
+}
+.Lagosta{
+    width: 20,0px;
+    height: auto;
+    
+}
