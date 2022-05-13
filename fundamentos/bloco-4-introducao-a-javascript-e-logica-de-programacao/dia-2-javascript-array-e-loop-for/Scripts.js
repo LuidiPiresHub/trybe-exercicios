@@ -82,3 +82,13 @@ for(let num of numbers){
 }
 console.log(menorValor);
 console.log();
+
+// Parte 8
+
+var myArray = []
+
+for(let i = 1; i <= 25; i += 1){
+    myArray.push(i)
+}
+console.log(myArray)
+console.log();
