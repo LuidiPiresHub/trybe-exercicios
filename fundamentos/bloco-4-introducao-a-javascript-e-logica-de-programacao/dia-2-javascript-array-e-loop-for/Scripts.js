@@ -92,3 +92,15 @@ for(let i = 1; i <= 25; i += 1){
 }
 console.log(myArray)
 console.log();
+
+// Parte 9
+
+var myArray2 = []
+
+for(let i = 1; i <= 25; i += 1){
+    myArray2.push(i)
+}
+for(let array of myArray2){
+    let resultado = array / 2
+    console.log(resultado)
+}
