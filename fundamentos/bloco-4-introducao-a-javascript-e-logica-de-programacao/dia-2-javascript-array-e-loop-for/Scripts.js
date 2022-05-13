@@ -47,3 +47,19 @@ for(let maiorValor of numbers){
 }
 console.log(valor3);
 console.log();
+
+// Parte 6
+
+let numerosPares = 0
+
+for(let num of numbers){
+    if(num % 2 === 1){
+        console.log(num + " Esté numero é Impar!");
+    } else {
+        numerosPares += 1
+        if(numerosPares === numbers.length - 1){
+            console.log("Nenhum valor ímpar encontrado!");
+        }
+    } 
+}
+console.log();
