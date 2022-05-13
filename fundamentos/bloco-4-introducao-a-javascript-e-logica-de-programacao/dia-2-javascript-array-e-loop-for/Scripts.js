@@ -63,3 +63,22 @@ for(let num of numbers){
     } 
 }
 console.log();
+
+// Parte 7
+
+let maiorValor = 0
+let menorValor = 0
+
+for(let num of numbers){
+    if(maiorValor < num){
+        maiorValor = num
+    }
+}
+for(let num of numbers){
+    if(num < maiorValor){
+        maiorValor = num
+        menorValor = maiorValor
+    }
+}
+console.log(menorValor);
+console.log();
