@@ -15,3 +15,23 @@ let word = 'Tryber';
 for(let i = word.length - 1; i > -1; i -= 1){
   console.log(word[i])
 }
+
+// Parte 3
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+
+let maiorPalavra = ''
+for(let word of array){
+  if(word.length > maiorPalavra.length){
+    maiorPalavra = word
+  }
+}
+console.log(maiorPalavra)
+
+let menorPalavra = maiorPalavra
+for(let word of array){
+  if(word.length <= menorPalavra.length){
+    menorPalavra = word
+  }
+}
+console.log(menorPalavra)
