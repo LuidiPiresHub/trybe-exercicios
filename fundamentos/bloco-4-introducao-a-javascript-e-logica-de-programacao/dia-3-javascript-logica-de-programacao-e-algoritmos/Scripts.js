@@ -35,3 +35,20 @@ for(let word of array){
   }
 }
 console.log(menorPalavra)
+
+// Parte 4
+
+let maiorNumeroPrimo = 0
+
+for(let numeroAtual = 0; numeroAtual <= 50; numeroAtual += 1){
+  let = éPrimo = true
+  for(let divisor = 2; divisor < numeroAtual; divisor += 1){
+    if(numeroAtual % divisor === 0){
+      éPrimo = false
+    }
+  }
+  if(éPrimo){
+    maiorNumeroPrimo = numeroAtual
+  }
+}
+console.log(maiorNumeroPrimo)
