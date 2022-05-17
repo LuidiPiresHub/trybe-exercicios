@@ -11,3 +11,9 @@ let info = {
 
 info['recorrente'] = 'sim'
 console.log(info);
+
+// Parte 3
+
+for (let key in info) {
+    console.log(key);
+}
