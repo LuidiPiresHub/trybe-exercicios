@@ -6,3 +6,8 @@ let info = {
     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
   };
   console.log('Bem-vinda, ' + info.personagem)
+
+//   Parte 2
+
+info['recorrente'] = 'sim'
+console.log(info);
