@@ -115,6 +115,22 @@ let leitor = {
     }
     let maiorIndice = array.indexOf(maiorNumero)
     console.log(maiorIndice);
+    console.log();
   }
 
   maiorIndice([2, 3, 6, 7, 10, 1])
+
+  // Parte 3
+
+function menorIndice(array) {
+  let menorIndice = 0
+  for (let indice in array) {
+    if (array[menorIndice] > array[indice]) {
+      menorIndice = indice
+    }
+  }
+  console.log(menorIndice);
+  console.log();
+}
+
+menorIndice([2, 4, 6, 7, 10, 0, -3])
