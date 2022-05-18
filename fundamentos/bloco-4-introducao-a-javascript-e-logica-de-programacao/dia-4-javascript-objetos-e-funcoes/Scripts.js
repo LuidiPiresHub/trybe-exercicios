@@ -1,3 +1,7 @@
+// ====================
+//   Objetos e For/In
+// ====================
+
 // Parte 1
 
 let info = {
@@ -76,3 +80,23 @@ let leitor = {
 
   console.log(leitor.nome + ' ' + 'tem' + ' ' + leitor.livrosFavoritos.length + ' ' + 'livros favoritos');
   console.log();
+
+  // ===========
+  //   Funções
+  // ===========
+
+  // Parte 1
+
+  function palíndromo(string) {
+    let stringReversa = ''
+    for (let i = string.length - 1; i >= 0; i -= 1){
+      stringReversa += string[i]
+    }
+      if (stringReversa === string){
+        console.log(true);
+      } else {
+        console.log(false);
+      }
+  }
+
+  palíndromo('arara')
