@@ -134,3 +134,17 @@ function menorIndice(array) {
 }
 
 menorIndice([2, 4, 6, 7, 10, 0, -3])
+
+// Parte 4
+
+function maiorNome(arrayNames) {
+  let biggestName = ''
+  for (let name of arrayNames) {
+    if (biggestName.length < name.length) {
+      biggestName = name
+    }
+  }
+  console.log(biggestName);
+}
+
+maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])
