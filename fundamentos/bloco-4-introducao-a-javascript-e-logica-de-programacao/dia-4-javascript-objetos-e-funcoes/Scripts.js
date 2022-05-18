@@ -51,6 +51,7 @@ for (let val in info) {
       console.log(info[val] + ' e ' + info2[val]);
     }
   }
+  console.log();
 
 //   Parte 6
 
@@ -94,9 +95,26 @@ let leitor = {
     }
       if (stringReversa === string){
         console.log(true);
+        console.log();
       } else {
         console.log(false);
+        console.log();
       }
   }
 
   palíndromo('arara')
+
+  // Parte 2
+
+  function maiorIndice (array) {
+    let maiorNumero = 0
+    for (let value of array) {
+      if (maiorNumero < value) {
+        maiorNumero = value
+      }
+    }
+    let maiorIndice = array.indexOf(maiorNumero)
+    console.log(maiorIndice);
+  }
+
+  maiorIndice([2, 3, 6, 7, 10, 1])
