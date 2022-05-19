@@ -145,6 +145,30 @@ function maiorNome(arrayNames) {
     }
   }
   console.log(biggestName);
+  console.log();
 }
 
 maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])
+
+// Parte 5
+
+function numeroMaisRepetido(array) {
+  let numeroMaisRepetido = 0
+  let verificador = 0
+  let contador = 0
+  for (let num1 of array) {
+    verificador = num1 
+    for (let num2 of array) {
+      if (num1 === num2) {
+        contador += 1       
+        if (numeroMaisRepetido < verificador) {
+          numeroMaisRepetido = verificador
+        }
+      }
+    }    
+  }
+  console.log(numeroMaisRepetido);
+  console.log();
+}
+
+numeroMaisRepetido([2, 3, 2, 5, 8, 2, 3])
