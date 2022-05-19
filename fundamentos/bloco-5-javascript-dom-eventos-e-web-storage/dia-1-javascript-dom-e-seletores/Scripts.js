@@ -5,3 +5,5 @@ backgroundColor.style.backgroundColor = 'rgb(76,164,109)'
 
 let backgroundColor2 = document.getElementsByClassName('center-content')[0]
 backgroundColor2.style.backgroundColor = 'white'
+
+document.getElementsByClassName('title')[0].innerText = 'JavaScripit'
