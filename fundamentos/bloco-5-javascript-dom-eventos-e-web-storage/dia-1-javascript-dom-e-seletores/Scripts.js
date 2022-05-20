@@ -1,28 +1,33 @@
 function euMeVejo() {
-    document.getElementById("future").innerText = "Daqui a 2 anos se Deus quiser já estarei trabalho e poderei ter meu primeiro carrinho!"
+    return document.getElementById("future").innerText = "Daqui a 2 anos se Deus quiser já estarei trabalho e poderei ter meu primeiro carrinho!"
 }
 console.log(euMeVejo());
 
 function corFundo() {
     let backgroundColor = document.getElementsByClassName('main-content')[0]
-    backgroundColor.style.backgroundColor = 'rgb(76,164,109)'
+    return backgroundColor.style.backgroundColor = 'rgb(76,164,109)'
 }
 console.log(corFundo());
 
 function corCentro() {
     let backgroundColor2 = document.getElementsByClassName('center-content')[0]
-    backgroundColor2.style.backgroundColor = 'white'
+    return backgroundColor2.style.backgroundColor = 'white'
 }
 console.log(corCentro());
 
 function corrige() {
-    document.getElementsByClassName('title')[0].innerText = 'JavaScripit'
+    return document.getElementsByClassName('title')[0].innerText = 'JavaScripit'
 }
 console.log(corrige());
 
 
 function paragraphUpperCase() {
-    let paragraph = document.getElementsByTagName('p')[0];
-    paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+    let tagP= document.getElementsByTagName('p');
+    for (let i = 0; i < tagP.length; i += 1) {
+        tagP.innerText = tagP[i];
+        console.log(tagP);
+    }
+    console.log(paragraph);
+    return paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
   }
   console.log(paragraphUpperCase());
