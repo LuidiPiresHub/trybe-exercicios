@@ -64,20 +64,25 @@
       element.innerText = fraseH1
       Body.appendChild(element)
 
-      let newTag = document.createElement('main')
-      newTag.className = 'main-content'
-      Body.appendChild(newTag)    
+      let tagMain = document.createElement('main')
+      tagMain.className = 'main-content'
+      Body.appendChild(tagMain)    
 
-      let newTag2 = document.createElement('section')
-      newTag2.className = 'center-content'
-      newTag.appendChild(newTag2)
+      let tagSectionCenter = document.createElement('section')
+      tagSectionCenter.className = 'center-content'
+      tagMain.appendChild(tagSectionCenter)
 
-      let newTag3 = document.createElement('p')
-      newTag2.appendChild(newTag3)
-      newTag3.innerText = 'Criando Site via JavaScript'
+      let tagParagraph = document.createElement('p')
+      tagSectionCenter.appendChild(tagParagraph)
+      tagParagraph.innerText = 'Criando Site via JavaScript'
+      
+      let tagSectionLeft = document.createElement('section')
+      tagSectionLeft.className = 'left-content'
+      tagMain.appendChild(tagSectionLeft)
 
-
-
+      let tagSectionRight = document.createElement('section')
+      tagSectionRight.className = 'right-content'
+      tagMain.appendChild(tagSectionRight)
     </script>
   </body>
 </html>
