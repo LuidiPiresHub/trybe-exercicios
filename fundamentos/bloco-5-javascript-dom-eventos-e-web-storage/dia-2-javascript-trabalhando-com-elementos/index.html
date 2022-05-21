@@ -89,7 +89,14 @@
       imagem.src = 'https://picsum.photos/200'
       tagSectionLeft.appendChild(imagem)
 
-
+      let ulList = document.createElement('ul')
+      tagSectionRight.appendChild(ulList)
+      let array = ['um', 'dois', 'trẽs', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+      for (let list in array) {
+        let itenList = document.createElement('li')
+        itenList.innerHTML = array[list]
+        ulList.appendChild(itenList)
+      }
       
     </script>
   </body>
