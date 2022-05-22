@@ -152,23 +152,23 @@ maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])
 
 // Parte 5
 
-function numeroMaisRepetido(array) {
-  let numeroMaisRepetido = 0
-  let verificador = 0
-  let contador = 0
-  for (let num1 of array) {
-    verificador = num1 
-    for (let num2 of array) {
-      if (num1 === num2) {
-        contador += 1       
-        if (numeroMaisRepetido < verificador) {
-          numeroMaisRepetido = verificador
-        }
+function maisRepetido(numeros) {
+  let contRepetido = 0;
+  let contNumero = 0;
+  let indexNumeroRepetido = 0;
+  for (let index in numeros) {
+    let verificaNumero = numeros[index];
+    for (let index2 in numeros) {
+      if (verificaNumero === numeros[index2]) {
+        contNumero += 1;
       }
-    }    
+    }
+    if (contNumero > contRepetido) {
+      contRepetido = contNumero;
+      indexNumeroRepetido = index;
+    }
+    contNumero = 0;
   }
-  console.log(numeroMaisRepetido);
-  console.log();
+  return numeros[indexNumeroRepetido];
 }
-
-numeroMaisRepetido([2, 3, 2, 5, 8, 2, 3])
+console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3]));
