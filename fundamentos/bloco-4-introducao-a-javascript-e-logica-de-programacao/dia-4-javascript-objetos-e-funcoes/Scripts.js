@@ -172,3 +172,15 @@ function maisRepetido(numeros) {
   return numeros[indexNumeroRepetido];
 }
 console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3]));
+console.log();
+
+// Parte 6
+
+function somatorio(n) {
+  let soma = 0
+  for (let i = 0; i <= n; i += 1) {
+    soma += i 
+  }
+  return soma
+}
+console.log(somatorio(5));
