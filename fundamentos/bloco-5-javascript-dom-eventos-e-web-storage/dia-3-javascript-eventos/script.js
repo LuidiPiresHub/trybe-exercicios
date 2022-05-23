@@ -24,18 +24,26 @@ function createDaysOfMonth() {
     liList.className = 'day';
     ulList.appendChild(liList);
     if (dias === 24 || dias === 25 || dias === 31) {
-      liList.className += ' holiday'
+      liList.className += ' holiday';
       ulList.appendChild(liList);
-    }
+    };
     if (dias === 4 || dias === 11 || dias === 18) {
-      liList.className += ' friday'
+      liList.className += ' friday';
       ulList.appendChild(liList);
-    }
+    };
     if (dias === 25) {
-      liList.className += ' friday'
+      liList.className += ' friday';
       ulList.appendChild(liList);
-    }
+    };
   };
 };
-createDaysOfMonth()
+createDaysOfMonth();
 
+function createButton(buttonName) {
+  let conteinerButton = document.querySelector('.buttons-container');
+  let button = document.createElement('Button');
+  button.innerHTML = buttonName;
+  button.id = 'btn-holiday';
+  conteinerButton.appendChild(button);
+};
+createButton('Feriados');
