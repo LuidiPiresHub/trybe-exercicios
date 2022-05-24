@@ -47,3 +47,30 @@ function createButton(buttonName) {
   conteinerButton.appendChild(button);
 };
 createButton('Feriados');
+
+function clickButton() {
+  let holidayButton = document.querySelector('#btn-holiday');
+  let getHolidays = document.querySelectorAll('.holiday');
+  let newColor = 'white';
+  let color = 'rgb(238,238,238)';
+
+  holidayButton.addEventListener('click', function () {
+    for (let i = 0; i < getHolidays.length; i += 1) {
+      if (getHolidays[i].style.backgroundColor === newColor) {
+        getHolidays[i].style.backgroundColor = color;
+      } else {
+        getHolidays[i].style.backgroundColor = newColor;
+      }
+    }
+  })
+}
+clickButton();
+
+function createFridayButton(buttonName) {
+  let conteinerButton = document.querySelector('.buttons-container');
+  let button = document.createElement('button');
+  button.innerHTML = buttonName;
+  button.id = 'btn-friday';
+  conteinerButton.appendChild(button);
+}
+createFridayButton('Sexta-Feira')
