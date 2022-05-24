@@ -51,9 +51,9 @@ createButton('Feriados');
 function clickButton() {
   let holidayButton = document.querySelector('#btn-holiday');
   let getHolidays = document.querySelectorAll('.holiday');
-  let newColor = 'white';
+  let newColor = 'cyan';
   let color = 'rgb(238,238,238)';
-
+  
   holidayButton.addEventListener('click', function () {
     for (let i = 0; i < getHolidays.length; i += 1) {
       if (getHolidays[i].style.backgroundColor === newColor) {
@@ -74,3 +74,22 @@ function createFridayButton(buttonName) {
   conteinerButton.appendChild(button);
 }
 createFridayButton('Sexta-Feira')
+
+function clickFridayButton(fridayArray) {
+  let fridayButton = document.querySelector('#btn-friday');
+  let getFridays = document.querySelectorAll('.friday');
+  let fridayText = 'SEXTOUUU!!!';
+  
+  fridayButton.addEventListener('click', function () {
+    for (let i = 0; i < getFridays.length; i += 1) {
+      if (getFridays[i].innerHTML !== fridayText) {
+        getFridays[i].innerHTML = fridayText;
+      } else {
+        getFridays[i].innerHTML = fridayArray[i]
+      }
+    }
+  })
+};
+
+let SextasFeiras = [4, 11, 18, 25];
+clickFridayButton(SextasFeiras);
