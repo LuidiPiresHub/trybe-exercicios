@@ -112,3 +112,13 @@ function mouseOut() {
 
 mouseOver();
 mouseOut();
+
+function tasks(string) {
+  let myTasksClass = document.querySelector('.my-tasks');
+  let spanTag = document.createElement('span');
+
+  spanTag.innerText = string;
+  myTasksClass.appendChild(spanTag);
+}
+
+tasks('Projeto');
