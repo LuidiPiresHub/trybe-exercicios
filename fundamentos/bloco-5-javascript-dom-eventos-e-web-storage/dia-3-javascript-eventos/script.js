@@ -93,3 +93,22 @@ function clickFridayButton(fridayArray) {
 
 let SextasFeiras = [4, 11, 18, 25];
 clickFridayButton(SextasFeiras);
+
+function mouseOver() {
+  let day = document.querySelector('#days');
+  day.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '600';
+  })
+}
+
+function mouseOut() {
+  let day = document.querySelector("#days");
+  day.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = '200';
+  })
+}
+
+mouseOver();
+mouseOut();
