@@ -1,0 +1,13 @@
+body {
+    width: 30%;
+    margin: 40px auto;
+    background-color: grey;
+}
+
+form {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid black;
+}
