@@ -24,7 +24,7 @@
   .menu-container {
     display: flex;
     width: 500px;
-    /* flex-grow: 1; */
+    flex-grow: 1;
     /* align-self: center; */
   }
   
