@@ -18,11 +18,14 @@
     display: flex;
     justify-content: center;
     width: 268px;
+    order: -1;
   }
   
   .menu-container {
     display: flex;
     width: 500px;
+    /* flex-grow: 1; */
+    /* align-self: center; */
   }
   
   .menu-container ul {
