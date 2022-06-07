@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 30px 40px;
+}
+
+.conteiner {
+    display: flex;
+}
+
+p {
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .conteiner {
+        flex-direction: column;
+    }
+
+    p {
+        padding: 0 5px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+    .conteiner {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: lightsalmon;
+    }
+    .conteiner {
+        flex-wrap: wrap;
+    }
+}
