@@ -47,7 +47,7 @@ const longestWord = (text) => {
     let maxLength = 0;
     let maiorPalavra = '';
 
-    for (let word of array) {
+    for (const word of array) {
         if (word.length > maxLength) {
             maxLength = word.length;
             maiorPalavra = word;
@@ -55,4 +55,17 @@ const longestWord = (text) => {
     }
     return maiorPalavra
 }
-console.log(longestWord('o potro deixou de ser potrindo e virou potrão'));
+console.log(longestWord('o potro deixou de ser potrinho e virou potrão'));
+
+// OU
+
+const longestWord2 = text => text.split(' ').sort((wordA, wordB) => wordB.length - wordA.length)[0];
+
+console.log(longestWord2("Antonio foi no banheiro e não sabemos o que aconteceu"));
+
+// Exercício 4
+
+const span = document.querySelector('#span');
+let contator = 0;
+
+document.querySelector('#botão').addEventListener('click', () => span.innerText = contator += 1)
