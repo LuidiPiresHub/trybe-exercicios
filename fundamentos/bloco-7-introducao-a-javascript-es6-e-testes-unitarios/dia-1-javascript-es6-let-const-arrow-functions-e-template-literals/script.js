@@ -38,3 +38,21 @@ console.log(fatorial(4));
 
 const factorial = (number) => number > 1 ? number * factorial(number - 1) : 1;
 console.log(factorial(4));
+
+// Exercício 2
+
+
+const longestWord = (text) => {
+    let array = text.split(' ');
+    let maxLength = 0;
+    let maiorPalavra = '';
+
+    for (let word of array) {
+        if (word.length > maxLength) {
+            maxLength = word.length;
+            maiorPalavra = word;
+        }
+    }
+    return maiorPalavra
+}
+console.log(longestWord('o potro deixou de ser potrindo e virou potrão'));
