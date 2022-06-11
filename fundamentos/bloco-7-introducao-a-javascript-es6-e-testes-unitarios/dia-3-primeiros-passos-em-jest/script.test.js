@@ -1,4 +1,4 @@
-const { soma, myRemove } = require('./script')
+const { soma, myRemove, myFizzBuzz } = require('./script')
 
 describe('Exercício 1', () => {
     it('A função retorma o resultado da soma!', () => {
@@ -15,5 +15,17 @@ describe('Exercício 2', () => {
         expect(myRemove([1, 2, 3, 4, 5], 3)).toEqual([1, 2, 4, 5]);
         expect(myRemove([1, 2, 3, 4], 3)).not.toEqual([1, 2, 3, 4])
         expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4])
+    });
+});
+
+describe('Exercício 3',() => {
+    it('A função tem o retorno esperado!', () => {
+        expect(myFizzBuzz(15)).toBe('fizzbuzz');
+        expect(myFizzBuzz(3)).toBe('fizz');
+        expect(myFizzBuzz(5)).toBe('buzz');
+    });
+    it('A função testa inputs improvaveis', () => {
+        expect(myFizzBuzz(2)).toBe(2);
+        expect(myFizzBuzz('string')).toBe(false);
     });
 });
