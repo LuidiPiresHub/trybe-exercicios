@@ -4,6 +4,16 @@ const soma = (a, b) => {
     }
     return a + b;
 }
-// console.log(soma('1','1'));
 
-module.exports = { soma }
+function myRemove(arr, item) {
+    let newArr = [];
+    for (let index = 0; index < arr.length; index += 1) {
+        if (item !== arr[index]) {
+            newArr.push(arr[index]);
+        }
+    }
+    return newArr;
+}
+//   console.log(myRemove([1, 2, 3, 4], 5));
+
+module.exports = { soma, myRemove }
