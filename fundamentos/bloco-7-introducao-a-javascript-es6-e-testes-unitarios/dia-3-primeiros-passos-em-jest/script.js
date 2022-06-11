@@ -21,7 +21,62 @@ function myFizzBuzz(num) {
     if (num % 3 === 0) return 'fizz';
     if (num % 5 === 0) return 'buzz';
     return num;
-  }
-  console.log(myFizzBuzz(1));
+}
 
-module.exports = { soma, myRemove, myFizzBuzz }
+function encode(string) {
+    let stringCoded = ''
+    for (let word of string) {
+        switch (word) {
+            case 'a':
+                stringCoded += 1
+                break;
+            case 'e':
+                stringCoded += 2
+                break;
+            case 'i':
+                stringCoded += 3
+                break;
+            case 'o':
+                stringCoded += 4
+                break;
+            case 'u':
+                stringCoded += 5
+                break;
+
+            default:
+                stringCoded += word
+                break;
+        }
+    }
+    return stringCoded
+}
+
+function decode(encodedString) {
+    let stringDecoded = ''
+    for (let word of encodedString) {
+        switch (word) {
+            case '1':
+                stringDecoded += 'a'
+                break;
+            case '2':
+                stringDecoded += 'e'
+                break;
+            case '3':
+                stringDecoded += 'i'
+                break;
+            case '4':
+                stringDecoded += 'o'
+                break;
+            case '5':
+                stringDecoded += 'u'
+                break;
+
+            default:
+                stringDecoded += word
+                break;
+        }
+    }
+    return stringDecoded
+}
+
+module.exports = { soma, myRemove, myFizzBuzz, encode, decode }
