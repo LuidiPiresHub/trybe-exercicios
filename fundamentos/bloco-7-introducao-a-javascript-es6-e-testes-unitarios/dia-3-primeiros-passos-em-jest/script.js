@@ -80,4 +80,35 @@ function decode(encodedString) {
     return stringDecoded
 }
 
-module.exports = { soma, myRemove, myFizzBuzz, encode, decode }
+function techList(array, string) {
+    let objectArray = []
+    if (array.length === 0) {
+        return 'Vazio!'
+    } else {
+        let arrayOrdenada = array.sort()
+        for (let techs of arrayOrdenada) {
+            let objeto = {
+                tech: techs,
+                name: string,
+            }
+            objectArray.push(objeto)
+        }
+    }
+    return objectArray
+}
+
+function hydrate(string) {
+    let cups = 0
+    for (let number of string) {
+        const number2 = parseInt(number)
+        if (number2) {
+            cups += number2
+        }
+    }
+    if (cups === 1) {
+        return `${cups} copo de água`
+    }
+    return `${cups} copos de água`
+}
+
+module.exports = { soma, myRemove, myFizzBuzz, encode, decode, techList, hydrate }
