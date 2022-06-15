@@ -24,8 +24,9 @@ function myFizzBuzz(num) {
 }
 
 function encode(string) {
+    const string2 = string.toLowerCase()
     let stringCoded = ''
-    for (let word of string) {
+    for (let word of string2) {
         switch (word) {
             case 'a':
                 stringCoded += 1
