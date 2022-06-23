@@ -61,9 +61,7 @@ const books = [
     },
 ];
 
-function everyoneWasBornOnSecXX() {
-    return books.every((birth) => (
-        birth.author.birthYear >= 1901 && birth.author.birthYear <= 2000
-    ));
+function booksOrderedByReleaseYearDesc() {
+    return books.sort((a, b) => b.releaseYear - a.releaseYear);
 }
-console.log(everyoneWasBornOnSecXX());
+console.log(booksOrderedByReleaseYearDesc());
