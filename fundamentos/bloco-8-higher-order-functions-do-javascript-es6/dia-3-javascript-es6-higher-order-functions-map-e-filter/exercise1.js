@@ -63,10 +63,5 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
-const formatedBookNames = () => {
-    const arr = books.map((element) => (
-        `${element.name} - ${element.genre} - ${element.author.name}` 
-    ));
-    return arr
-};
-console.log(formatedBookNames());
+const formatedBookNames = (array) => array.map((element) => `${element.name} - ${element.genre} - ${element.author.name}`);
+console.log(formatedBookNames(books));
