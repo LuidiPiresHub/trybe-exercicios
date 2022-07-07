@@ -124,3 +124,36 @@ const sendMarsTemperature2 = (onSuccess) => {
 
 sendMarsTemperature2(temperatureInFahrenheit); // imprime "It is currently 47ºF at Mars", por exemplo
 sendMarsTemperature2(greet); // imprime "Hi there! Curiosity here. Right now is 53ºC at Mars", por exemplo
+
+// Exercicio 6
+
+const messageDelay3 = () => Math.floor(Math.random() * 5000);
+
+const getMarsTemperature3 = () => {
+  const maxTemperature = 58;
+  return Math.floor(Math.random() * maxTemperature);
+};
+
+const toFahrenheit3 = (degreeCelsius) => (degreeCelsius * 9/5) + 32;
+
+const temperatureInFahrenheit3 = (temperature) =>
+  console.log(`It is currently ${toFahrenheit3(temperature)}ºF at Mars`);
+
+const greet3 = (temperature) =>
+  console.log(`Hi there! Curiosity here. Right now is ${temperature}ºC at Mars`);
+
+const handleError = (errorReason) =>
+  console.log(`Error getting temperature: ${errorReason}`);
+
+// definição da função sendMarsTemperature...
+const sendMarsTemperature3 = (onSuccess, onError) => {
+  const currentTemperature = getMarsTemperature3();
+  const messageSuccessfullySent = Math.random() <= 0.6;
+  setTimeout(() => {
+      if(messageSuccessfullySent) onSuccess(currentTemperature)
+      else onError('Robot is busy');
+  }, messageDelay3());
+}
+
+sendMarsTemperature3(temperatureInFahrenheit3, handleError);
+sendMarsTemperature3(greet3, handleError);
